@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<title>it'sQueerThings</title>-->
+    <title>University of Carilon</title>
+    <!-- make website responsive-->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--for font-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+    <!-- for icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" integrity="sha384-EvBWSlnoFgZlXJvpzS+MAUEjvN7+gcCwH+qh7GRFOGgZO0PuwOFro7qPOJnLfe7l" crossorigin="anonymous" />
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <!-- what is nav? how to use it?-->
+            <a href="index.html"><img src="img/logo.png" alt="Logo" /></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <!-- what is link put in here-->
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <!--continouson add style in CSS >> youtube >> 8:45-->
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!--Contact us -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d15636.291889097763!2d104.89755215480251!3d11.54662311818216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d11.5451309!2d104.8965898!4m5!1s0x310951ed4d5f0e77%3A0xaf58813d0fa0867b!2sToul%20Tom%20Poung%20High%20School%20Back%20Gate%20Toul%20Tom%20Poung%20High%20School%20Back%20Gate%2C%2051E0%20St%20432%2C%20Phnom%20Penh!3m2!1d11.541808099999999!2d104.91640129999999!5e0!3m2!1sen!2skh!4v1643336771326!5m2!1sen!2skh"
+            width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="far fa-home"></i>
+                    <span>
+              <h5>ABC Road, ABC Building.</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </span>
+                </div>
+
+                <div>
+                    <i class="far fa-home"></i>
+                    <span>
+              <h5>+855 12 567 765</h5>
+              <p>Ms, RoseWood</p>
+            </span>
+                </div>
+            </div>
+
+            <div class="contact-col"></div>
+        </div>
+    </section>
+
+    <!--footer section-->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque quae sapiente, magnam temporibus saepe provident tempora.<br /> Impedit omnis, quod dicta illum et, ex molestias quo provident, voluptas aliquam error porro.15
+        </p>
+        <div class="icon">
+            <i class="far fa-facebook"></i>
+            <i class="far fa-instagram"></i>
+            <i class="far fa-twitter"></i>
+            <i class="far fa-linkedin"></i>
+            <!--icon not shown duh-->
+        </div>
+        <p>Made with<i class="far fa-facebook"></i>Nimol</p>
+    </section>
+
+    <!--javaScript for toggle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
